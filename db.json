@@ -1,6 +1,72 @@
 {
   "users": [
-    { "id": "1", "email": "admin@mail.com", "password": "123" },
-    { "id": "2", "email": "min@mail.com", "password": "123" }
+    { "id": "1", "name": "juan", "email": "admin@mail.com", "password": "123" },
+    { "id": "2", "name": "juan", "email": "min@mail.com", "password": "123" }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Lenovo ThinkPad",
+      "price": 1200,
+      "category": "Electronics",
+      "stock": 5,
+      "description": "14-inch business laptop"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Mouse",
+      "price": 25,
+      "category": "Accessories",
+      "stock": 50,
+      "description": "Ergonomic wireless mouse"
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard",
+      "price": 90,
+      "category": "Accessories",
+      "stock": 20,
+      "description": "RGB mechanical keyboard"
+    },
+    {
+      "id": "4",
+      "name": "27-inch Monitor",
+      "price": 300,
+      "category": "Electronics",
+      "stock": 10,
+      "description": "Full HD IPS monitor"
+    },
+    {
+      "id": "5",
+      "name": "USB-C Charger 65W",
+      "price": 45,
+      "category": "Accessories",
+      "stock": 30,
+      "description": "Fast charging USB-C power adapter"
+    },
+    {
+      "id": "6",
+      "name": "External SSD 1TB",
+      "price": 150,
+      "category": "Storage",
+      "stock": 15,
+      "description": "High-speed portable solid state drive"
+    },
+    {
+      "id": "7",
+      "name": "Noise Cancelling Headphones",
+      "price": 200,
+      "category": "Audio",
+      "stock": 12,
+      "description": "Over-ear wireless headphones"
+    },
+    {
+      "id": "8",
+      "name": "Webcam Full HD",
+      "price": 70,
+      "category": "Accessories",
+      "stock": 25,
+      "description": "1080p webcam with built-in microphone"
+    }
   ]
 }

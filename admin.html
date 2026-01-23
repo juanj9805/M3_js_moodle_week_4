@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Panel | Ventory</title>
     <script src="guard.js"></script>
-    <script src="app.js" defer></script>
+    <script src="admin.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -16,6 +16,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="container-fluid vh-100">
@@ -26,88 +27,148 @@
           <div>
             <img
               class="img-fluid"
-              src="https://1000marcas.net/wp-content/uploads/2019/12/Coca-Cola-logo.png"
+              src="https://azulenaccion.com/wp-content/uploads/2022/01/logo_bueno.png"
               alt=""
             />
           </div>
           <nav>
-              <p>Navigation</p>
-              <ul class="list-group">
-                  <li class="list-group-item">
-                      <a class="text-black text-decoration-none my-2" href="">
-                          <i class="bi bi-book me-3"></i>adsfda</a>
-                    </li>
-                </ul>
-                <p>Navigation</p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a class="text-black text-decoration-none my-2" href="">
-                            <i class="bi bi-book me-3"></i>adsfda</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="text-black text-decoration-none my-2" href="">
-                            <i class="bi bi-book me-3"></i>adsfda</a>
-                    </li>
-                </ul>
-                </nav>
-          <div class="">
-              <button
-                id="logout"
-                class="btn btn-link text-black text-decoration-none w-100 text-start px-0"
-                type="button"
-              >
-                <i class="bi bi-box-arrow-in-left me-3"></i>Log out
-          </ul>
+            <p>Navigation</p>
+            <ul class="list-group">
+              <li id="toLanding" class="list-group-item">
+                <a class="text-black text-decoration-none my-2" href="">
+                  <i class="bi bi-book me-3"></i>Landing</a
+                >
+              </li>
+            </ul>
+            <p>Navigation</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a class="text-black text-decoration-none my-2" href="">
+                  <i class="bi bi-book me-3"></i>adsfda</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a class="text-black text-decoration-none my-2" href="">
+                  <i class="bi bi-book me-3"></i>adsfda</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="card rounded p-3">
+            <div class="row w-100 d-flex justify-content-between">
+              <div class="col-auto">
+                <h4>Upgrade your</h4>
+              </div>
+              <div class="col-auto">
+                <span class="">$15</span>
+              </div>
+            </div>
+            <div class="row">
+              <p><i class="bi bi-book me-3"></i> asdsafa</p>
+            </div>
+            <button class="btn btn-outline-primary">dsafa</button>
+          </div>
+          <button
+            id="logout"
+            class="btn w-100 text-start px-3 logout-btn"
+            type="button"
+          >
+            <i class="bi bi-box-arrow-in-left me-3"></i>
+            Log out
+          </button>
         </aside>
-        <main class="col col-10 vh-100">
-            <header class="p-3 rounded my-2 bg-primary">
-                <h4>Bienvenido juan</h4>
-                <p>Nos encanta verte de nuevo</p>
-            </header>
-            <div class="row d-flex justify-content-between">
-                <div class="col col-6">
-                    <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search....">
-                        <button class="btn btn-primary"><i class="bi bi-search"></i></button>
-
-                    </div>
-                </div>
-                <div class="col col-1">
-                    <button class="btn btn-primary">Add</button>
-                </div>
+        <main class="col col-10 vh-100 p-4">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col col-6">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Search...."
+                />
+                <button class="btn btn-primary">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
             </div>
-            <div class="row d-flex gap-5 justify-content-center my-5">
-                <div class="col-3 rounded">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus molestiae amet laborum? Nulla, eligendi libero, maxime tempore quos ullam sed natus obcaecati et voluptate voluptas excepturi exercitationem veniam assumenda!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus molestiae amet laborum? Nulla, eligendi libero, maxime tempore quos ullam sed natus obcaecati et voluptate voluptas excepturi exercitationem veniam assumenda!
-                </div>
-                <div class="col-3 rounded">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus molestiae amet laborum? Nulla, eligendi libero, maxime tempore quos ullam sed natus obcaecati et voluptate voluptas excepturi exercitationem veniam assumenda!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus molestiae amet laborum? Nulla, eligendi libero, maxime tempore quos ullam sed natus obcaecati et voluptate voluptas excepturi exercitationem veniam assumenda!
-                </div>
-                <div class="col-3 rounded">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus molestiae amet laborum? Nulla, eligendi libero, maxime tempore quos ullam sed natus obcaecati et voluptate voluptas excepturi exercitationem veniam assumenda!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus molestiae amet laborum? Nulla, eligendi libero, maxime tempore quos ullam sed natus obcaecati et voluptate voluptas excepturi exercitationem veniam assumenda!
-                </div>
+            <div class="col col-auto">
+              <img
+                class="img-fluid rounded-circle"
+                src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
+                style="width: 60px"
+                alt=""
+              />
             </div>
-            <table class="table table-bordered table-hover">
+          </div>
+          <div class="row d-flex justify-content-between my-5">
+            <div class="col-auto">
+              <h3>Welcome back, name</h3>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline-primary">dsaljfa</button>
+              <button class="btn btn-primary">
+                <i class="bi bi-circle"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row d-flex gap-5 justify-content-center my-5">
+            <div class="card col-5 rounded bg-light p-3">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h4>Start</h4>
+                  <a href=""><i class="bi bi-book"></i></a>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  doloribus molestiae amet laborum? Nulla, eligendi libero,
+                  maxime tempore quos ullam sed natus obcaecati et voluptate
+                  voluptas excepturi exercitationem veniam assumenda! Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  doloribus molestiae amet laborum? Nulla, eligendi libero,
+                  maxime tempore quos ullam sed natus obcaecati et voluptate
+                  voluptas excepturi exercitationem veniam assumenda!
+                </p>
+              </div>
+            </div>
+            <div class="card col-5 rounded bg-light p-3">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h4>Start</h4>
+                  <a href=""><i class="bi bi-book"></i></a>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  doloribus molestiae amet laborum? Nulla, eligendi libero,
+                  maxime tempore quos ullam sed natus obcaecati et voluptate
+                  voluptas excepturi exercitationem veniam assumenda! Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  doloribus molestiae amet laborum? Nulla, eligendi libero,
+                  maxime tempore quos ullam sed natus obcaecati et voluptate
+                  voluptas excepturi exercitationem veniam assumenda!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col col-11 bg-light rounded p-3">
+              <h3>Profiles</h3>
+              <table class="table table-bordered table-hover">
                 <thead>
-                    <tr>
-                        <th>dsafajfa</th>
-                        <th>dsafajfa</th>
-                        <th>dsafajfa</th>
-                        <th>dsafajfa</th>
-                    </tr>
+                  <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>ACTIONS</th>
+                  </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>dsada321</td>
-                    <td>dsada321</td>
-                    <td>dsada321</td>
-                    <td>dsada321</td>
-                </tr>
-                </tbody>
-            </table>
+                <tbody id="bodyContainer"></tbody>
+              </table>
+            </div>
+          </div>
         </main>
       </div>
     </section>

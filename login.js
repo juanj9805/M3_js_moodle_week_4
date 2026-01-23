@@ -1,5 +1,4 @@
 const sendButton = document.querySelector("#sendBtn");
-const logout = document.querySelector("#logout");
 
 const getData = async function () {
   const url = "http://localhost:4000/users";
@@ -36,10 +35,4 @@ sendButton.addEventListener("click", async function () {
       icon: "error",
     });
   }
-});
-
-logout.addEventListener("click", function () {
-  alert("s");
-  sessionStorage.removeItem("isLogged");
-  window.location = "login.html";
 });
