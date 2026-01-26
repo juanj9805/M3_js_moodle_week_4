@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Ventory</title>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer type="module" src="./../login.js"></script>
+    <!-- Style links -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,11 +18,49 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer type="module" src="./login.js"></script>
+    <link rel="stylesheet" href="./../login.css" />
   </head>
   <body>
-    <section class="container-fluid vh-100">
+    <section
+      class="container-fluid vh-100 d-flex justify-content-center align-items-center"
+    >
+      <form class="login col-3 bg-dark p-5 rounded" acion="">
+        <div class="d-flex justify-content-center">
+          <img
+            class="img-fluid w-25"
+            src="./../../assets/logoubold.webp"
+            alt=""
+          />
+        </div>
+        <div class="form-floating my-3">
+          <input
+            id="email"
+            class="form-control"
+            type="text"
+            placeholder="Email"
+          />
+          <label class="form-label" for="">Correo</label>
+        </div>
+        <div class="form-floating my-3">
+          <input
+            id="password"
+            class="form-control"
+            type="text"
+            placeholder="Password"
+          />
+          <label class="form-label" for="">Contraseña</label>
+        </div>
+        <!-- <select name="" id="rolSelect" class="form-select my-3">
+          <option selected value="">Elige un rol</option>
+          <option value="administrador">administrador</option>
+          <option value="vendedor">vendedor</option>
+        </select> -->
+        <button id="sendBtn" type="button" class="btn btn-primary">
+          Iniciar sesion
+        </button>
+      </form>
+    </section>
+    <!-- <section class="container-fluid vh-100">
       <div class="row vh-100">
         <div class="col col-4 mx-auto m-auto">
           <form
@@ -54,6 +96,6 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
   </body>
 </html>

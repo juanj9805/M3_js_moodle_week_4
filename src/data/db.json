@@ -19,11 +19,42 @@
       "status": "active",
       "createdAt": "2024-12-05T14:00:00Z",
       "lastLogin": null
+    },
+    {
+      "id": "u-003",
+      "name": "Maria Manager",
+      "email": "manager@mail.com",
+      "password": "123",
+      "role": "manager",
+      "status": "active",
+      "createdAt": "2025-01-10T08:45:00Z",
+      "lastLogin": "2026-01-22T16:10:00Z"
+    },
+    {
+      "id": "u-004",
+      "name": "Carlos Support",
+      "email": "support@mail.com",
+      "password": "123",
+      "role": "support",
+      "status": "active",
+      "createdAt": "2025-03-18T13:20:00Z",
+      "lastLogin": "2026-01-18T10:05:00Z"
+    },
+    {
+      "id": "u-005",
+      "name": "Ana Guest",
+      "email": "guest@mail.com",
+      "password": "123",
+      "role": "user",
+      "status": "inactive",
+      "createdAt": "2025-06-02T17:00:00Z",
+      "lastLogin": null
     }
   ],
   "products": [
     {
       "id": "p-001",
+      "urlImg": "https://p1-ofp.static.pub//fes/cms/2024/03/07/zpuzenaiwgirevtfhwakefypg46ff5766229.jpg",
       "sku": "LEN-TP-14",
       "name": "Laptop Lenovo ThinkPad",
       "category": "Electronics",
@@ -39,6 +70,7 @@
     },
     {
       "id": "p-002",
+      "urlImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5FjSOqkUOeLA54MKbD6az05TemNn1kDKaSw&s",
       "sku": "LOG-MSE-WL",
       "name": "Wireless Mouse",
       "category": "Accessories",
@@ -51,6 +83,54 @@
       "supplier": "Logitech",
       "createdAt": "2024-11-15T11:30:00Z",
       "updatedAt": "2026-01-05T09:20:00Z"
+    },
+    {
+      "id": "p-003",
+      "urlImg": "https://celufio.com/wp-content/uploads/2023/01/Iphone-14-Pro-Colores.jpg",
+      "sku": "APL-IPHN-14",
+      "name": "iPhone 14",
+      "category": "Electronics",
+      "description": "Apple smartphone 128GB",
+      "price": 999,
+      "cost": 750,
+      "stock": 12,
+      "minStock": 3,
+      "status": "active",
+      "supplier": "Apple",
+      "createdAt": "2024-12-20T10:00:00Z",
+      "updatedAt": "2026-01-12T14:30:00Z"
+    },
+    {
+      "id": "p-004",
+      "urlImg": "https://d2j6dbq0eux0bg.cloudfront.net/images/29139035/2943212907.jpg",
+      "sku": "SAM-TAB-A8",
+      "name": "Samsung Galaxy Tab A8",
+      "category": "Electronics",
+      "description": "10.5-inch Android tablet",
+      "price": 320,
+      "cost": 210,
+      "stock": 20,
+      "minStock": 5,
+      "status": "active",
+      "supplier": "Samsung",
+      "createdAt": "2024-12-05T09:15:00Z",
+      "updatedAt": "2026-01-08T11:45:00Z"
+    },
+    {
+      "id": "p-005",
+      "urlImg": "https://shop.zebronics.com/cdn/shop/files/Zeb-K5002MW-pic1_b20858ce-1b0c-4973-b3c6-2a824d76bf4c.jpg?v=1729670202&width=2000",
+      "sku": "HP-KBD-WL",
+      "name": "Wireless Keyboard",
+      "category": "Accessories",
+      "description": "Slim wireless keyboard",
+      "price": 45,
+      "cost": 22,
+      "stock": 35,
+      "minStock": 8,
+      "status": "active",
+      "supplier": "HP",
+      "createdAt": "2024-11-25T15:40:00Z",
+      "updatedAt": "2026-01-15T10:10:00Z"
     }
   ],
   "sessions": [

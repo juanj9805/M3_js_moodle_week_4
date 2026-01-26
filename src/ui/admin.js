@@ -1,30 +1,31 @@
+import * as State from "../state/state.js";
+import * as Session from "../state/session.js";
+import * as Api from "../data/api.js";
+
 const logout = document.querySelector("#logout");
 const toLanding = document.querySelector("#toLanding");
+if (toLanding) {
+  toLanding.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "index.html";
+  });
+}
 
-toLanding.addEventListener("click", function () {
-  window.location = "index.html";
-});
-
-logout.addEventListener("click", function () {
-  sessionStorage.removeItem("isLogged");
-  window.location = "login.html";
-});
-
-const getUserData = async function () {
-  const url = "http://localhost:4000/users";
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
-};
+if (logout) {
+  logout.addEventListener("click", function (e) {
+    e.preventDefault();
+    Session.clearAuth();
+    State.setAuth(false);
+    window.location = "login.html";
+  });
+}
 
 const renderUserData = async function () {
   const bodyContainer = document.querySelector("#bodyContainer");
   const bannerUserName = document.querySelector("#user-name");
-  const userData = await getUserData();
-  // Bad logic needs improvement
-  bannerUserName.textContent = `
-      Welcome back ${userData[0].name}
-  `;
+  const userData = await Api.getUsers();
+  // I need to add the name of the user
+  bannerUserName.textContent = `Welcome back`;
 
   userData.forEach((user) => {
     const html = `

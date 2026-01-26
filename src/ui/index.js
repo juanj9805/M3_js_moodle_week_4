@@ -1,26 +1,29 @@
+import * as State from "../state/state.js";
+import * as Session from "../state/session.js";
+import * as Api from "../data/api.js";
+
 const cardsContainer = document.querySelector("#cardsContainer");
 const logout = document.querySelector("#logout");
-const toPanel = document.querySelector("#toPanel");
+const toPanel = document.querySelector("#toAdminPanel");
 
-toPanel.addEventListener("click", function () {
-  window.location = "admin.html";
-});
+if (toPanel) {
+  toPanel.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location = "admin.html";
+  });
+}
 
-logout.addEventListener("click", function () {
-  sessionStorage.removeItem("isLogged");
-  window.location = "login.html";
-});
-
-const getData = async function () {
-  const url = "http://localhost:4000/products";
-  const response = await fetch(url);
-  const data = await response.json();
-
-  return data;
-};
+if (logout) {
+  logout.addEventListener("click", function (e) {
+    e.preventDefault();
+    Session.clearAuth();
+    State.setAuth(false);
+    window.location = "login.html";
+  });
+}
 
 window.addEventListener("DOMContentLoaded", async function () {
-  const products = await getData();
+  const products = await Api.getProducts();
 
   products.forEach((product) => {
     cardsContainer.innerHTML += `
@@ -33,7 +36,7 @@ window.addEventListener("DOMContentLoaded", async function () {
         <div class="card-body p-3 d-flex flex-column">
           <img
             class="img-fluid w-50 mx-auto mb-3"
-            src="https://tauretcomputadores.com/images/products/Product_202408261227161196795540.perfilPNG.webp"
+            src="${product.urlImg}"
           />
           <span>${product.category}</span>
           <p>$${product.price}</p>
