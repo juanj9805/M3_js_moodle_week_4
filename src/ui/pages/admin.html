@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./../style.css" />
+     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   </head>
   <body>
     <!-- Admin section -->
@@ -28,10 +29,10 @@
         <aside
           class="sidebar bg-dark text-light col-2 vh-100 shadow-sm d-flex flex-column justify-content-between p-3"
         >
-          <div>
+          <div class="d-flex justify-content-center">
             <img
-              class="img-fluid"
-              src="https://azulenaccion.com/wp-content/uploads/2022/01/logo_bueno.png"
+              class="img-fluid w-25"
+              src="./../../assets/logoubold.webp"
               alt=""
             />
           </div>
@@ -46,12 +47,12 @@
             </ul>
             <p>Principal menu</p>
             <ul class="list-group">
-              <li class="list-group">
-                <a class="text-light text-decoration-none my-2" href="">
+              <li id="usersNav" class="list-group">
+                <a  class="text-light text-decoration-none my-2" href="">
                   <i class="bi bi-people me-3"></i>Users</a
                 >
               </li>
-              <li class="list-group">
+              <li id="productsNav" class="list-group">
                 <a class="text-light text-decoration-none my-2" href="">
                   <i class="bi bi-box-seam me-3"></i>Products</a
                 >
@@ -85,8 +86,8 @@
           </button>
         </aside>
         <!-- Main section -->
-        <main class="col col-10 vh-100 p-4">
-          <div class="row d-flex justify-content-between align-items-center">
+        <main id="mainContent" class="col col-10 vh-100 p-4">
+          <!-- <div class="row d-flex justify-content-between align-items-center">
             <div class="col col-6">
               <div class="input-group">
                 <input
@@ -160,7 +161,6 @@
               </div>
             </div>
           </div>
-          <!-- Table section -->
           <div class="row d-flex justify-content-center">
             <div class="col col-11 bg-dark text-light rounded p-3">
               <h3>Users</h3>
@@ -176,7 +176,7 @@
                 <tbody id="bodyContainer"></tbody>
               </table>
             </div>
-          </div>
+          </div> -->
         </main>
       </div>
     </section>

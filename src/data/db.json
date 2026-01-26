@@ -56,7 +56,7 @@
       "id": "p-001",
       "urlImg": "https://p1-ofp.static.pub//fes/cms/2024/03/07/zpuzenaiwgirevtfhwakefypg46ff5766229.jpg",
       "sku": "LEN-TP-14",
-      "name": "Laptop Lenovo ThinkPad",
+      "name": "Laptop Lenovo",
       "category": "Electronics",
       "description": "14-inch business laptop",
       "price": 1200,
@@ -104,7 +104,7 @@
       "id": "p-004",
       "urlImg": "https://d2j6dbq0eux0bg.cloudfront.net/images/29139035/2943212907.jpg",
       "sku": "SAM-TAB-A8",
-      "name": "Samsung Galaxy Tab A8",
+      "name": "Samsung Galaxy A8",
       "category": "Electronics",
       "description": "10.5-inch Android tablet",
       "price": 320,
@@ -131,7 +131,55 @@
       "supplier": "HP",
       "createdAt": "2024-11-25T15:40:00Z",
       "updatedAt": "2026-01-15T10:10:00Z"
-    }
+    },{
+  "id": "p-006",
+  "urlImg": "https://www.losdistribuidores.com/wp-content/uploads/2023/02/apple-ipad-10-generacion-colores.webp",
+  "sku": "APP-IPD-10",
+  "name": "Apple iPad 10th Gen",
+  "category": "Electronics",
+  "description": "10.9-inch iPad with A14 Bionic chip",
+  "price": 499,
+  "cost": 360,
+  "stock": 15,
+  "minStock": 4,
+  "status": "active",
+  "supplier": "Apple",
+  "createdAt": "2024-12-10T10:30:00Z",
+  "updatedAt": "2026-01-10T14:20:00Z"
+},
+{
+  "id": "p-007",
+  "urlImg": "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8NTM3NDkwfGltYWdlL3BuZ3xoZWYvaDhjLzEzNzIyOTMzMDAyMjcwLnBuZ3w5YmM0Y2NiNDJhZjU0ZDMyNGFkYTJlNjU4ZmE1MGExZmNkMjQ3MmJhZjEyMGViNzhlYmJlM2RiNTQ2YWUxYmJm/lenovo-laptops-thinkpad-t14-gen-3-14-intel-hero.png",
+  "sku": "LEN-LAP-T14",
+  "name": "Lenovo ThinkPad T14",
+  "category": "Electronics",
+  "description": "14-inch business laptop, Intel Core i7",
+  "price": 1200,
+  "cost": 880,
+  "stock": 8,
+  "minStock": 3,
+  "status": "active",
+  "supplier": "Lenovo",
+  "createdAt": "2024-12-15T11:45:00Z",
+  "updatedAt": "2026-01-12T09:10:00Z"
+},
+{
+  "id": "p-008",
+  "urlImg": "https://www.adorama.com/images/Large/SOWH1XM5BAK.JPG",
+  "sku": "SON-HP-WH",
+  "name": "Sony WH-1000XM5",
+  "category": "Electronics",
+  "description": "Wireless noise-canceling headphones",
+  "price": 399,
+  "cost": 250,
+  "stock": 25,
+  "minStock": 7,
+  "status": "active",
+  "supplier": "Sony",
+  "createdAt": "2024-12-18T16:00:00Z",
+  "updatedAt": "2026-01-15T10:40:00Z"
+}
+
   ],
   "sessions": [
     {

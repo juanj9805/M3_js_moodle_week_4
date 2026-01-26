@@ -18,7 +18,7 @@ if (logout) {
     e.preventDefault();
     Session.clearAuth();
     State.setAuth(false);
-    window.location = "login.html";
+    window.location = "login.html"; 
   });
 }
 
@@ -35,14 +35,14 @@ window.addEventListener("DOMContentLoaded", async function () {
 
         <div class="card-body p-3 d-flex flex-column">
           <img
-            class="img-fluid w-50 mx-auto mb-3"
+            class="img-fluid w-50 mx-auto mb-3 h-50"
             src="${product.urlImg}"
           />
           <span>${product.category}</span>
           <p>$${product.price}</p>
           <p>${product.description}</p>
 
-          <button class="btn btn-primary mt-auto">Buy</button>
+          <button class="btn btn-outline-primary mt-auto">Buy</button>
         </div>
       </div>
     </div>
