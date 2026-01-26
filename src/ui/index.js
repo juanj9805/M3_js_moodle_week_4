@@ -27,23 +27,14 @@ window.addEventListener("DOMContentLoaded", async function () {
 
   products.forEach((product) => {
     cardsContainer.innerHTML += `
-    <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-header bg-primary">
-          <h3 class="text-white text-center">${product.name}</h3>
-        </div>
-
-        <div class="card-body p-3 d-flex flex-column">
-          <img
-            class="img-fluid w-50 mx-auto mb-3 h-50"
-            src="${product.urlImg}"
-          />
-          <span>${product.category}</span>
-          <p>$${product.price}</p>
-          <p>${product.description}</p>
-
-          <button class="btn btn-outline-primary mt-auto">Buy</button>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="${product.urlImg}" class="card-img-top w-75 h-75 mx-auto p-3" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">${product.name}</h5>
+      <p class="card-text">${product.category}</p>
+        <p class="card-text">${product.description}</p>
+        <p class="card-text">${product.price}</p>
+        <button class="btn btn-outline-success mt-auto">Ask for it</button>
       </div>
     </div>
   `;
