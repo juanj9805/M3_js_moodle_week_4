@@ -25,7 +25,7 @@ sendButton.addEventListener("click", async function () {
       text: "You clicked the button!",
       icon: "success",
     });
-    setTimeout(() => {
+    setTimeout(() => {      
       window.location.href = "admin.html";
     }, 2000);
   } else {

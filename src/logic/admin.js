@@ -19,7 +19,12 @@ const getUserData = async function () {
 
 const renderUserData = async function () {
   const bodyContainer = document.querySelector("#bodyContainer");
+  const bannerUserName = document.querySelector("#user-name");
   const userData = await getUserData();
+  // Bad logic needs improvement
+  bannerUserName.textContent = `
+      Welcome back ${userData[0].name}
+  `;
 
   userData.forEach((user) => {
     const html = `

@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": "u-001",
+      "name": "Juan Admin",
+      "email": "admin@mail.com",
+      "password": "123",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2024-12-01T10:15:00Z",
+      "lastLogin": "2026-01-20T18:30:00Z"
+    },
+    {
+      "id": "u-002",
+      "name": "Juan User",
+      "email": "min@mail.com",
+      "password": "123",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2024-12-05T14:00:00Z",
+      "lastLogin": null
+    }
+  ],
+  "products": [
+    {
+      "id": "p-001",
+      "sku": "LEN-TP-14",
+      "name": "Laptop Lenovo ThinkPad",
+      "category": "Electronics",
+      "description": "14-inch business laptop",
+      "price": 1200,
+      "cost": 900,
+      "stock": 5,
+      "minStock": 2,
+      "status": "active",
+      "supplier": "Lenovo",
+      "createdAt": "2024-11-10T09:00:00Z",
+      "updatedAt": "2026-01-10T12:00:00Z"
+    },
+    {
+      "id": "p-002",
+      "sku": "LOG-MSE-WL",
+      "name": "Wireless Mouse",
+      "category": "Accessories",
+      "description": "Ergonomic wireless mouse",
+      "price": 25,
+      "cost": 12,
+      "stock": 50,
+      "minStock": 10,
+      "status": "active",
+      "supplier": "Logitech",
+      "createdAt": "2024-11-15T11:30:00Z",
+      "updatedAt": "2026-01-05T09:20:00Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "s-001",
+      "userId": "u-001",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "expiresAt": "2026-01-21T18:30:00Z"
+    }
+  ]
+}
