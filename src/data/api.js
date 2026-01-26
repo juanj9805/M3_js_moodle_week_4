@@ -7,7 +7,6 @@ const getUsers = async function () {
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }
-  console.log(response);
 
   return response.json();
 };
@@ -31,7 +30,6 @@ const createUser = async function (user) {
 
 const getProducts = async function () {
   const response = await fetch(`${baseUrl}/products`);
-
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }
