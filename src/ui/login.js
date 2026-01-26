@@ -1,17 +1,14 @@
+import * as Api from "./../data/api.js";
+import * as State from "./../state/state.js";
+import * as Session from "./../state/session.js";
+
 const sendButton = document.querySelector("#sendBtn");
-
-const getData = async function () {
-  const url = "http://localhost:4000/users";
-  const response = await fetch(url);
-  const data = await response.json();
-
-  return data;
-};
 
 sendButton.addEventListener("click", async function () {
   const inputPassword = document.querySelector("#password");
   const inputEmail = document.querySelector("#email");
-  const users = await getData();
+
+  const users = await Api.getUsers();
 
   const userFound = users.find(
     (user) =>
@@ -19,13 +16,14 @@ sendButton.addEventListener("click", async function () {
   );
 
   if (userFound) {
-    sessionStorage.setItem("isLogged", "true");
+    State.setAuth(true);
+    Session.setAuth(State.state.isAuthenticated);
     Swal.fire({
       title: "Welcome!",
       text: "You clicked the button!",
       icon: "success",
     });
-    setTimeout(() => {      
+    setTimeout(() => {
       window.location.href = "admin.html";
     }, 2000);
   } else {
